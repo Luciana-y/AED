@@ -1,0 +1,3 @@
+C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/AED_1.dir
+C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
