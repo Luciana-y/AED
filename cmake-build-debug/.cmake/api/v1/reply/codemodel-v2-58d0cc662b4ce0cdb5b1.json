@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "AED_1",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "AED_1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-AED_1-Debug-fb583011314a24f78da0.json",
 					"name" : "AED_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Simply::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Simply-Debug-8aa414cda5bed6fb7cac.json",
+					"name" : "Simply",
 					"projectIndex" : 0
 				}
 			]
