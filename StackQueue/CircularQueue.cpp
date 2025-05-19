@@ -1,5 +1,5 @@
 #include <iostream>
-#define MAX 100  // Tamaño máximo de la cola
+#define MAX 100  // Una celda menos se usa como margen
 
 using namespace std;
 
@@ -9,50 +9,40 @@ private:
     T arr[MAX];
     int front;
     int rear;
-    int count;  // Número actual de elementos en la cola
 
 public:
-    // Constructor
     CircularQueue() {
         front = 0;
-        rear = -1;
-        count = 0;
+        rear = 0;
     }
 
-    // Verifica si la cola está vacía
     bool isEmpty() const {
-        return count == 0;
+        return front == rear;
     }
 
-    // Verifica si la cola está llena
     bool isFull() const {
-        return count == MAX;
+        return (rear + 1) % MAX == front;
     }
 
-    // Inserta un elemento en la cola
     void enqueue(const T& value) {
         if (isFull()) {
             cout << "Cola llena. No se puede insertar " << value << endl;
             return;
         }
-        rear = (rear + 1) % MAX;
         arr[rear] = value;
-        count++;
+        rear = (rear + 1) % MAX;
     }
 
-    // Elimina y retorna el elemento del frente
     T dequeue() {
         if (isEmpty()) {
             cerr << "Cola vacía. No se puede eliminar." << endl;
-            return T();  // Valor por defecto
+            return T();
         }
         T temp = arr[front];
         front = (front + 1) % MAX;
-        count--;
         return temp;
     }
 
-    // Retorna el elemento en el frente sin eliminarlo
     T peek() const {
         if (isEmpty()) {
             cerr << "Cola vacía." << endl;
@@ -61,15 +51,16 @@ public:
         return arr[front];
     }
 
-    // Muestra los elementos de la cola
     void display() const {
         if (isEmpty()) {
             cout << "Cola vacía." << endl;
             return;
         }
         cout << "Contenido de la cola: ";
-        for (int i = 0; i < count; i++) {
-            cout << arr[(front + i) % MAX] << " ";
+        int i = front;
+        while (i != rear) {
+            cout << arr[i] << " ";
+            i = (i + 1) % MAX;
         }
         cout << endl;
     }
@@ -78,13 +69,12 @@ public:
 // Ejemplo de uso
 int main() {
     CircularQueue<int> cola;
-
     cola.enqueue(10);
     cola.enqueue(20);
     cola.enqueue(30);
     cola.display();
 
-    std::cout << "Frente: " << cola.peek() << std::endl;
+    cout << "Frente: " << cola.peek() << endl;
 
     cola.dequeue();
     cola.display();
