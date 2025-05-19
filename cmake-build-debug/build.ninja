@@ -106,6 +106,39 @@ build Simply.exe: CXX_EXECUTABLE_LINKER__Simply_Debug CMakeFiles/Simply.dir/like
   TARGET_IMPLIB = libSimply.dll.a
   TARGET_PDB = Simply.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Doubly
+
+
+#############################################
+# Order-only phony target for Doubly
+
+build cmake_object_order_depends_target_Doubly: phony || CMakeFiles/Doubly.dir
+
+build CMakeFiles/Doubly.dir/likedList/Doubly.cpp.obj: CXX_COMPILER__Doubly_unscanned_Debug C$:/Users/Familia/CLionProjects/AED_1/likedList/Doubly.cpp || cmake_object_order_depends_target_Doubly
+  DEP_FILE = CMakeFiles\Doubly.dir\likedList\Doubly.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Doubly.dir
+  OBJECT_FILE_DIR = CMakeFiles\Doubly.dir\likedList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Doubly
+
+
+#############################################
+# Link the executable Doubly.exe
+
+build Doubly.exe: CXX_EXECUTABLE_LINKER__Doubly_Debug CMakeFiles/Doubly.dir/likedList/Doubly.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Doubly.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Doubly.exe
+  TARGET_IMPLIB = libDoubly.dll.a
+  TARGET_PDB = Doubly.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -134,6 +167,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build AED_1: phony AED_1.exe
 
+build Doubly: phony Doubly.exe
+
 build Simply: phony Simply.exe
 
 # =============================================================================
@@ -144,7 +179,7 @@ build Simply: phony Simply.exe
 #############################################
 # Folder: C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug
 
-build all: phony AED_1.exe Simply.exe
+build all: phony AED_1.exe Simply.exe Doubly.exe
 
 # =============================================================================
 # Built-in targets
