@@ -17,7 +17,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -34,7 +35,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -59,6 +61,13 @@
 					"id" : "Simply::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Simply-Debug-8aa414cda5bed6fb7cac.json",
 					"name" : "Simply",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Stack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Stack-Debug-e5697535ef3a73904fd0.json",
+					"name" : "Stack",
 					"projectIndex" : 0
 				}
 			]

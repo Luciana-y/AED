@@ -139,6 +139,39 @@ build Doubly.exe: CXX_EXECUTABLE_LINKER__Doubly_Debug CMakeFiles/Doubly.dir/like
   TARGET_IMPLIB = libDoubly.dll.a
   TARGET_PDB = Doubly.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Stack
+
+
+#############################################
+# Order-only phony target for Stack
+
+build cmake_object_order_depends_target_Stack: phony || CMakeFiles/Stack.dir
+
+build CMakeFiles/Stack.dir/StackQueue/Stack.cpp.obj: CXX_COMPILER__Stack_unscanned_Debug C$:/Users/Familia/CLionProjects/AED_1/StackQueue/Stack.cpp || cmake_object_order_depends_target_Stack
+  DEP_FILE = CMakeFiles\Stack.dir\StackQueue\Stack.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Stack.dir
+  OBJECT_FILE_DIR = CMakeFiles\Stack.dir\StackQueue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Stack
+
+
+#############################################
+# Link the executable Stack.exe
+
+build Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug CMakeFiles/Stack.dir/StackQueue/Stack.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Stack.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Stack.exe
+  TARGET_IMPLIB = libStack.dll.a
+  TARGET_PDB = Stack.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build Doubly: phony Doubly.exe
 
 build Simply: phony Simply.exe
 
+build Stack: phony Stack.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build Simply: phony Simply.exe
 #############################################
 # Folder: C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug
 
-build all: phony AED_1.exe Simply.exe Doubly.exe
+build all: phony AED_1.exe Simply.exe Doubly.exe Stack.exe
 
 # =============================================================================
 # Built-in targets
