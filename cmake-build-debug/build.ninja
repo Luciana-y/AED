@@ -172,6 +172,39 @@ build Stack.exe: CXX_EXECUTABLE_LINKER__Stack_Debug CMakeFiles/Stack.dir/StackQu
   TARGET_IMPLIB = libStack.dll.a
   TARGET_PDB = Stack.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Order-only phony target for CircularQueue
+
+build cmake_object_order_depends_target_CircularQueue: phony || CMakeFiles/CircularQueue.dir
+
+build CMakeFiles/CircularQueue.dir/StackQueue/CircularQueue.cpp.obj: CXX_COMPILER__CircularQueue_unscanned_Debug C$:/Users/Familia/CLionProjects/AED_1/StackQueue/CircularQueue.cpp || cmake_object_order_depends_target_CircularQueue
+  DEP_FILE = CMakeFiles\CircularQueue.dir\StackQueue\CircularQueue.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles\CircularQueue.dir\StackQueue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CircularQueue
+
+
+#############################################
+# Link the executable CircularQueue.exe
+
+build CircularQueue.exe: CXX_EXECUTABLE_LINKER__CircularQueue_Debug CMakeFiles/CircularQueue.dir/StackQueue/CircularQueue.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CircularQueue.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CircularQueue.exe
+  TARGET_IMPLIB = libCircularQueue.dll.a
+  TARGET_PDB = CircularQueue.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -200,6 +233,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build AED_1: phony AED_1.exe
 
+build CircularQueue: phony CircularQueue.exe
+
 build Doubly: phony Doubly.exe
 
 build Simply: phony Simply.exe
@@ -214,7 +249,7 @@ build Stack: phony Stack.exe
 #############################################
 # Folder: C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug
 
-build all: phony AED_1.exe Simply.exe Doubly.exe Stack.exe
+build all: phony AED_1.exe Simply.exe Doubly.exe Stack.exe CircularQueue.exe
 
 # =============================================================================
 # Built-in targets
