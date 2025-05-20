@@ -21,7 +21,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -42,7 +43,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -53,6 +55,13 @@
 					"id" : "AED_1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-AED_1-Debug-fb583011314a24f78da0.json",
 					"name" : "AED_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "AVL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AVL-Debug-cb4a8f37074e22d4d45e.json",
+					"name" : "AVL",
 					"projectIndex" : 0
 				},
 				{

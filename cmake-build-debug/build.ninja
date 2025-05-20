@@ -271,6 +271,39 @@ build BST.exe: CXX_EXECUTABLE_LINKER__BST_Debug CMakeFiles/BST.dir/BinaryTree/BS
   TARGET_IMPLIB = libBST.dll.a
   TARGET_PDB = BST.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target AVL
+
+
+#############################################
+# Order-only phony target for AVL
+
+build cmake_object_order_depends_target_AVL: phony || CMakeFiles/AVL.dir
+
+build CMakeFiles/AVL.dir/BinaryTree/AVL.cpp.obj: CXX_COMPILER__AVL_unscanned_Debug C$:/Users/Familia/CLionProjects/AED_1/BinaryTree/AVL.cpp || cmake_object_order_depends_target_AVL
+  DEP_FILE = CMakeFiles\AVL.dir\BinaryTree\AVL.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\AVL.dir
+  OBJECT_FILE_DIR = CMakeFiles\AVL.dir\BinaryTree
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target AVL
+
+
+#############################################
+# Link the executable AVL.exe
+
+build AVL.exe: CXX_EXECUTABLE_LINKER__AVL_Debug CMakeFiles/AVL.dir/BinaryTree/AVL.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\AVL.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = AVL.exe
+  TARGET_IMPLIB = libAVL.dll.a
+  TARGET_PDB = AVL.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -299,6 +332,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build AED_1: phony AED_1.exe
 
+build AVL: phony AVL.exe
+
 build BST: phony BST.exe
 
 build CircularQueue: phony CircularQueue.exe
@@ -319,7 +354,7 @@ build Stack: phony Stack.exe
 #############################################
 # Folder: C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug
 
-build all: phony AED_1.exe Simply.exe Doubly.exe Stack.exe CircularQueue.exe HashTable.exe BST.exe
+build all: phony AED_1.exe Simply.exe Doubly.exe Stack.exe CircularQueue.exe HashTable.exe BST.exe AVL.exe
 
 # =============================================================================
 # Built-in targets

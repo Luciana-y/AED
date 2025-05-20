@@ -5,5 +5,6 @@ C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/Stack.dir
 C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/CircularQueue.dir
 C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/HashTable.dir
 C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/BST.dir
+C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/AVL.dir
 C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Familia/CLionProjects/AED_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
