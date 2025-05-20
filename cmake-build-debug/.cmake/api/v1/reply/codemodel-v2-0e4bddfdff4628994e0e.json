@@ -19,7 +19,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -38,7 +39,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -63,6 +65,13 @@
 					"id" : "Doubly::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Doubly-Debug-470a971f026225e87fdc.json",
 					"name" : "Doubly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HashTable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HashTable-Debug-a90a29afca7ff723b33a.json",
+					"name" : "HashTable",
 					"projectIndex" : 0
 				},
 				{
