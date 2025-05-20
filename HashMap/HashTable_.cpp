@@ -1,7 +1,7 @@
-#ifndef HASHTABLE_H
-#define HASHTABLE_H
-
 #include <random>
+#include <iostream>
+
+using namespace std;
 
 template<typename T1, typename T2>
 struct Node {
@@ -132,5 +132,3 @@ public:
         return false;
     }
 };
-
-#endif
